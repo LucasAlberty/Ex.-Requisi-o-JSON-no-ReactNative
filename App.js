@@ -7,7 +7,7 @@ export default App = () => {
   const getAccess = async () => {
     try {
       const response = await fetch(
-        '[nome_servidor]:[porta]/mge/service.sbr?serviceName=MobileLoginSP.login&outputType=json',
+        'http://[nome_servidor]:[porta]/mge/service.sbr?serviceName=MobileLoginSP.login&outputType=json',
         {
           method: 'POST',
           headers: {
